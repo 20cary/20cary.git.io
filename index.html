@@ -18,6 +18,12 @@
     <script>
     console.log("we are in the web!");
     alert("Hello World :)");
+    var compute = document.querySelector(".submit");
+    
+    function test(){
+        document.querySelector(".results").innerHTML = parsInt(document.getElementById("num1").value);
+    }
+    compute.addEventListner("click", test);
     </script>
     </body>
 </html>
