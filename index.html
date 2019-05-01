@@ -29,13 +29,25 @@
             <input type="submit" value="submit" class="submit">
             <p class="results">Nothing yet</p>
         </div>
+        
     <script>
     console.log("we are in the web!");
     // alert("Hello World :)");
     var compute = document.querySelector(".submit");
     
-    function test(){
-        document.querySelector(".results").innerHTML = parseInt(document.getElementById("num1").value);
+    function pythagoras(){
+        var a = parseFloat(document.querySelector(".sideA").value());
+        console.log(a);
+        
+        var b = parseFloat(document.querySelector(".sideb").value());
+        console.log(b);
+        
+        var out = document.querySelector(".results");
+        var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        
+        out.innerHTML = parseFloat(c);
+        
+        document.querySelector(".results").innerHTML = parseInt(document.getElementById(".num1").value);
     }
     compute.addEventListner("click", test);
     </script>
