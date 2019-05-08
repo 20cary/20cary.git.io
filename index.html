@@ -31,6 +31,7 @@
         </div>
         
     <script>
+    
     // alert("Hello World :)");
     var compute = document.querySelector(".submit");
     
@@ -41,10 +42,19 @@
         var b = parseFloat(document.querySelector(".sideb").value());
         console.log(b);
         
-        var out = document.querySelector(".results");
-        var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        var sum = document.querySelector(".sum");
         
-        out.innerHTML = parseFloat(c);
+        var difference = document.querySelector(".difference");
+        
+        var product = document.querySelector(".product");
+        
+        var divide = document.querySelector(".divide")
+        
+        sum.innerHTML = a + b;
+        
+        difference.innerHTML = a - b;
+        
+        product
         
         document.querySelector(".results").innerHTML = parseInt(document.getElementById(".num1").value);
     }
