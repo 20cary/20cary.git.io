@@ -4,21 +4,26 @@
         <tile>35 Arrays</tile>
     </head>
     <body>
-        <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing Yet</p>
+        <div>
+            <input type="radio" name="response" value="yes">yes<br>
+            <input type="radio" name="response" value="no">no<br>
+            <input type="radio" name="response" value="maybe">maybe<br>
+            <input type="radio" name="response" value="sure why not">sure why not<br>
+            <input type="radio" name="response" value="what no how">what no how<br>
+        </div>
         
+            <input type="submit" value="submit" class="submit">
+            <p class="out">Nothing Yet</p>
     <script>
     var submit = document.querySelector(".submit");
-    var out = document.querySelector(".out")
-    var arr = ["yes", "no", "maybe", "sure why not", "what, no, how"]
+    var out = document.querySelector(".out");
     
-    console.log(arr[0]);
-    console.log(arr[1]);
-    console.log(arr[2]);
-    
-    for(var i = 0; i < arr.length; i++){
-        console.log(arr[i]);
+    function reply(){
+        var radios = document.getElementsByName("response");
+        console.log(radios);
     }
+    
+    submit.addEventListener("click", reply);
     </script>
     <body>
 <html>
